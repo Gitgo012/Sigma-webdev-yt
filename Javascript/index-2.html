@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-y: hidden;
+      }
+      .red{
+        background-color: bisque;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+      }
+      .box {
+        height: 100px;
+        width: 200px;
+        border: 1px solid black;
+        margin: 20px;
+      }
+      .box-holder{
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+      }
+      .changeColor {
+        margin: 20px;
+        display: block;
+        padding: 20px;
+        border-radius: 10px;
+        background-color:beige;
+      }
+      .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+      }
+      .changeColor:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container red bg green">
+      <div class="box-holder">
+        <div class="box box-1" style="background-color: aqua">Box-1</div>
+        <div class="box box-2" style="background-color: blueviolet">Box-2</div>
+        <div class="box box-3" style="background-color: burlywood">Box-3</div>
+        <div class="box box-4" style="background-color: cadetblue">Box-4</div>
+        <div class="box box-5" style="background-color: blanchedalmond">
+          Box-5
+        </div>
+      </div>
+      <!-- //This is a comment// -->
+       <div class="button">
+        <button class="changeColor" onclick="changeColor()" >Change Color</button>
+       </div>
+    </div>
+    <script src="./dom-ex.js"></script>
+  </body>
+</html>

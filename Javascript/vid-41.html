@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        margin-bottom: 70px;
+      }
+    
+      .text-center h1 {
+        margin-bottom: 40px;
+        font-weight: 400;
+      }
+      .text-center h4 {
+        margin-bottom: 40px;
+        font-weight: 400;
+      }
+      .text-center a {
+        background-color: #0ab9d4;
+        font-size: small;
+        font-weight: 600;
+        padding: 10px 25px 10px 25px;
+        border: none;
+      }
+      .night-icon{
+        height: 25px;
+        margin-left: 10px;
+      }
+      .night-icon:hover{
+        cursor: pointer;
+      }
+      .container2,
+      .container3 {
+        width: 80vw;
+        padding: 30px 100px 10px 100px;
+      }
+      .container5 {
+        width: 80vw;
+        padding: 30px 100px 10px 100px;
+        height: 50vh;
+      }
+      .col {
+        height: 25vh;
+        margin-right: 20px;
+        padding-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: #f5f5f5;
+      }
+      .col h5 {
+        font-weight: 600;
+        font-size: large;
+        margin-bottom: 15px;
+      }
+      .col h6 {
+        font-weight: 400;
+        font-size: smaller;
+        margin-bottom: 15px;
+      }
+      .col button {
+        margin-bottom: 10px;
+      }
+      .container4 {
+        height: 90vh;
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(34, 34, 34);
+      }
+      .custom-container {
+        background-color: white;
+      }
+      .custom {
+        background-color: white;
+        height: 10px;
+        font-size: medium;
+        width: auto;
+      }
+      .container5 {
+        width: auto;
+        height: 50vh;
+      }
+      .container6 {
+        width: auto;
+        height: 20vh;
+      }
+      input::placeholder {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            width="180"
+            height="55"
+            alt="UltraEdit"
+            id="logo"
+            data-height-percentage="58"
+            data-actual-width="259"
+            data-actual-height="83"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Security and compliance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">English</a>
+            </li>
+            <li class="nav-item d-flex align-items-center">
+              <img onclick="nightMode()" class="night-icon" src="./images/vid-41/night-mode.png" />
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-center">
+        <h1>
+          Download <b>UltraEdit</b> for Windows
+          <img
+            decoding="async"
+            src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+            width="112"
+            height="32"
+            alt="Reviews"
+            class="wp-image-1613 alignnone size-full"
+          />
+        </h1>
+        <h4>
+          Download and try UltraEdit before you buy it! This download includes
+          the full Windows version of the text editor.
+        </h4>
+        <a class="btn btn-primary btn-lg" href="#" role="button"
+          >DOWNLOAD MAC OR LINUX VERSION</a
+        >
+      </div>
+      <div class="container2 d-flex align-items-center">
+        <img
+          class="d-inline"
+          height="70"
+          width="80"
+          src="./images/vid-41/Screenshot 2024-08-07 141051.png"
+          alt="UltraEdit"
+        />
+        <h5 style="font-weight: 400" class="d-inline mb-0 ml-2">
+          Download UltraEdit
+        </h5>
+        <h6 style="font-weight: 400" class="d-inline mb-0 ml-2 custo-h6">
+          v2024.0(released 2024-04-19) | Hotfix
+        </h6>
+      </div>
+      <div class="container3">
+        <div class="row">
+          <div class="col d-flex flex-column align-items-center">
+            <h5 style="margin-bottom: 55px">English</h5>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>Deutsch</h5>
+            <h6>German</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>Italiano</h5>
+            <h6>Italian</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="w-100"></div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>Espanol</h5>
+            <h6>Spanish</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>français</h5>
+            <h6>French</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>Português brasileiro</h5>
+            <h6>Brazilian Portuguese</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="w-100"></div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>日本</h5>
+            <h6>Japanese</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>한국어</h5>
+            <h6>Korean</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>中国</h5>
+            <h6>Chinese</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div class="w-100"></div>
+          <div class="col d-flex flex-column align-items-center">
+            <h5>中國</h5>
+            <h6>Traditional Chinese</h6>
+            <button
+              type="button"
+              class="btn btn-primary btn-sm"
+              style="
+                padding: 3px 10px 3px 10px;
+                background-color: rgb(92, 184, 92);
+                border: none;
+              "
+            >
+              Download 64-bit
+            </button>
+            <h6>SHA256</h6>
+          </div>
+          <div
+            class="col d-flex flex-column align-items-center custom-container"
+          ></div>
+          <div
+            class="col d-flex flex-column align-items-center custom-container"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="container4">
+      <div
+        class="container d-flex justify-content-center"
+        style="color: white; width: 100%; margin: 0px 40px; padding-left: 200px"
+      >
+        <div class="row w-100">
+          <div
+            class="col-6 d-flex flex-column justify-content-center text-center"
+          >
+            <h4 style="margin-bottom: 20px; margin-top: 50px">
+              Join the UltraEdit newsletter
+            </h4>
+            <h6 style="margin-bottom: 20px; font-weight: 400; font-size: 16px">
+              Sign up for our newsletter and receive emails for the latest news,
+              blogs, and special deals on UltraEdit.
+            </h6>
+          </div>
+          <div
+            class="col-6 d-flex align-items-center justify-content-center"
+            style="width: 50%"
+          >
+            <div
+              class="box text-center"
+              style="
+                width: 24vw;
+                height: 35vh;
+                background-color: white;
+                border-radius: 10px;
+                margin-top: 50px;
+                padding: 15px;
+              "
+            >
+              <h5 style="color: #0ab9d4; font-weight: 400">
+                Subscribe to our emails
+              </h5>
+              <label for email style="color: black; font-size: small"
+                >Enter your mail</label
+              >
+              <input
+                type="email"
+                id="email"
+                style="
+                  border-radius: 5px;
+                  padding: 10px 30px 10px 30px;
+                  border: 1px solid gray;
+                  margin-bottom: 20px;
+                "
+              />
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                style="
+                  padding: 5px 84px 5px 84px;
+                  background-color: rgb(0, 182, 209);
+                  border: none;
+                  font-weight: 600;
+                "
+              >
+                SIGN UP
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container"
+        style="
+          color: white;
+          font-weight: 400;
+          padding-left: 135px;
+          margin-top: 90px;
+        "
+      >
+        <h3 style="font-weight: 400; font-size: 25px; margin-bottom: 10px">
+          EXE or MSI?
+        </h3>
+        <h6 style="display: block; font-weight: 400; font-size: 15px">
+          The EXE builds of our products are the preferred download for most of
+          our users, running Windows 8.1 and later.
+        </h6>
+        <h6 style="display: block; font-weight: 400; font-size: 15px">
+          We make MSI builds available for bulk or silent deployments (command
+          line, GPO, SCCM, etc.).
+          <span style="color: rgb(0, 182, 209); font-weight: 400"
+            >Get the UltraEdit MSI installer.</span
+          >
+        </h6>
+      </div>
+      <div
+        class="container"
+        style="
+          color: white;
+          font-weight: 400;
+          padding-left: 135px;
+          margin-top: 20px;
+        "
+      >
+        <h3 style="font-weight: 400; font-size: 25px; margin-bottom: 10px">
+          Free trial period
+        </h3>
+        <h6 style="display: block; font-weight: 400; font-size: 15px">
+          This application comes with a free, fully functional 30 day trial
+          period. After the trial period expires, you must
+          <span style="color: rgb(0, 182, 209); font-weight: 400"
+            >purchase a license </span
+          >to continue using it.
+        </h6>
+      </div>
+    </div>
+    <div
+      class="container-flex container5"
+      style="display: flex; margin-bottom: 100px; padding-left: 250px"
+    >
+      <div class="container-1" style="width: 25%">
+        <h6 style="font-size: 14px; margin-bottom: 10px">
+          <strong>What’s your language?</strong>
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">
+          Code editor (General)
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">Text editor</h6>
+        <h6 style="font-size: small; font-weight: 400">Hex/Binary</h6>
+        <h6 style="font-size: small; font-weight: 400">HTML</h6>
+        <h6 style="font-size: small; font-weight: 400">CSS</h6>
+        <h6 style="font-size: small; font-weight: 400">Unix shell scripts</h6>
+        <h6 style="font-size: small; font-weight: 400">PL/SQL</h6>
+        <h6 style="font-size: small; font-weight: 400">EDI</h6>
+        <h6 style="font-size: small; font-weight: 400">C++</h6>
+        <h6 style="font-size: small; font-weight: 400">PHP</h6>
+        <h6 style="font-size: small; font-weight: 400">XML</h6>
+        <h6 style="font-size: small; font-weight: 400">Markdown</h6>
+        <h6 style="font-size: small; font-weight: 400">SAS</h6>
+        <h6 style="font-size: small; font-weight: 400">Visual Basic (VB)</h6>
+      </div>
+      <div class="container-2" style="width: 25%">
+        <h6 style="font-size: 14px; margin-bottom: 10px">
+          <strong>What type of user are you?</strong>
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">
+          Programmer / Developer
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">Web Developer</h6>
+        <h6 style="font-size: small; font-weight: 400">Database Manager</h6>
+        <h6 style="font-size: small; font-weight: 400">System Administrator</h6>
+        <h6 style="font-size: small; font-weight: 400">Technical Writer</h6>
+        <h6 style="font-size: small; font-weight: 400">Editor / Publisher</h6>
+        <h6 style="font-size: small; font-weight: 400">
+          Medical / Pharmaceutical
+        </h6>
+      </div>
+      <div class="container-3" style="width: 25%">
+        <h6 style="font-size: 14px; margin-bottom: 10px">
+          <strong>General</strong>
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">Contact</h6>
+        <h6 style="font-size: small; font-weight: 400">
+          License Agreement (EULA)
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">End of Life Policy</h6>
+        <h6 style="font-size: small; font-weight: 400">Information Policy</h6>
+        <h6 style="font-size: small; font-weight: 400">Privacy Policy</h6>
+        <h6 style="font-size: small; font-weight: 400">
+          Uninstall Instructions
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">Sitemap</h6>
+        <h6 style="font-size: small; font-weight: 400">Legal</h6>
+        <h6 style="font-size: small; font-weight: 400">Software Security</h6>
+      </div>
+      <div class="container-4" style="width: 20%">
+        <h6 style="font-size: 14px; margin-bottom: 10px">
+          <strong>Subscribe to out newsletter</strong>
+        </h6>
+        <h6 style="font-size: small; font-weight: 400">
+          Get the latest news on new releases, event, and developments.
+        </h6>
+        <input
+          placeholder="Enter email address..."
+          type="email"
+          id="email"
+          style="
+            border-radius: 5px;
+            padding: 6px 10px 6px 10px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+          "
+        />
+        <button
+          type="button"
+          class="btn btn-primary btn-lg"
+          style="
+            padding: 5px 60px 5px 60px;
+            background-color: rgb(0, 182, 209);
+            border: none;
+            font-weight: 600;
+            font-size: medium;
+          "
+        >
+          SUBSCRIBE
+        </button>
+      </div>
+    </div>
+    <div
+      class="container-flex container6"
+      style="display: flex; flex-direction: row; padding-left: 250px"
+    >
+      <div
+        class="container-flex container6"
+        style="display: flex; flex-direction: row; width: 100vw"
+      >
+        <div class="left-side" style="width: 60%">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+              width="140"
+              height="45"
+              alt="UltraEdit"
+              id="logo"
+              data-height-percentage="58"
+              data-actual-width="259"
+              data-actual-height="83"
+          /></a>
+          <h6 style="font-size: small; font-weight: 400">
+            ©2024 UltraEdit. All rights reserved
+          </h6>
+        </div>
+        <div class="right-side" style="width: 40%">
+          <span style="display: inline"
+            ><img
+              style="height: 30px; margin-right: 10px"
+              src="./images/vid-41/icons8-twitterx-50.png"
+          /></span>
+          <span style="display: inline"
+            ><img
+              style="height: 30px; margin-right: 10px"
+              src="./images/vid-41/icons8-facebook-50.png"
+          /></span>
+          <span style="display: inline; margin-right: 10px"
+            ><img
+              style="height: 30px"
+              src="./images/vid-41/icons8-instagram-50.png"
+          /></span>
+          <span style="display: inline; margin-right: 10px"
+            ><img
+              style="height: 30px"
+              src="./images/vid-41/icons8-youtube-50.png"
+          /></span>
+          <span style="display: inline"
+            ><img
+              style="height: 30px"
+              src="./images/vid-41/icons8-discord-50.png"
+          /></span>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

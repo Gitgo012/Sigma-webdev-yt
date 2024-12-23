@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box-click{
+    height: 20%;
+}
+.click{
+    color: blue;
+    padding: 20px;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.3s ease;
+
+}
+.click:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: rgb(129, 5, 5);
+}

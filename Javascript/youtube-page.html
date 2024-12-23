@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Playlist add</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        overflow-x: hidden;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+      }
+      .container2 {
+        width: 70%;
+      }
+      .input-container {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        padding-top: 20px;
+        height: 390px;
+        background-color: bisque;
+      }
+      .input-container input{
+        padding: 5px 10px 5px 10px;
+
+      }
+      .input-container button{
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+      .input-container button:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+      }
+      .input-container input {
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border:1px solid black ;
+      }
+      .text {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: black;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      .img-container {
+        width: auto;
+      }
+      .time {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 10px;
+        font-weight: lighter;
+        color: white;
+        position: relative;
+        bottom: 20px;
+        left: 120px;
+        background-color: rgb(69, 69, 69);
+        width: 29px;
+        height: auto;
+        padding: 3px;
+        border-radius: 3px;
+      }
+      .img-container img {
+        position: absolute;
+      }
+      .time {
+        z-index: 1;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: black;
+      }
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 10px;
+        height: 80%;
+      }
+      .inline-container {
+        width: auto;
+        height: 20%;
+      }
+      .channelName {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(47, 47, 47);
+        font-weight: lighter;
+        font-size: 12px;
+        margin-bottom: 3px;
+      }
+      .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 20px;
+      }
+      .box-holder {
+        height: 100px;
+        width: 70%;
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+      }
+      .views {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(47, 47, 47);
+        display: inline-flex;
+        margin-right: 5px;
+        font-weight: lighter;
+        font-size: 12px;
+      }
+      .timeUploaded {
+        display: inline-flex;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(47, 47, 47);
+        font-weight: lighter;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container2"></div>
+      <div class="input-container">
+        <input type="text" class="Title" id="Title" placeholder="Add Title of video" />
+        <br>
+        <input type="text" class="Channel" id="Channel" placeholder="Add Channel name" />
+        <br>
+        <input type="text" class="Views" id="Views" placeholder="Add number of views" />
+        <br>
+        <input type="text" class="Timestamp" id="Timestamp" placeholder="Add Video Timestamps" />
+        <br>
+        <input type="text" class="Time" id="Time" placeholder="Add when was video uploaded" />
+        <br>
+        <button class="addVideo">Add video</button>
+      </div>
+    </div>
+    <script src="./youtube-page.js"></script>
+  </body>
+</html>

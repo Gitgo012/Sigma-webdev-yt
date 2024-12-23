@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        nav{
+            height: 10vh;
+            width: 100vw;
+            position: sticky;
+            background-color: pink;
+        }
+        .container-main{
+            height: 100vh;
+            width: 100vw;
+            padding: 30px;
+        }
+        .container1{
+            padding: 30px 70px 30px 70px;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: green;
+        }
+        .container-left{
+            height: 100%;
+            width: 40%;
+            background-color: rgb(253, 177, 63);
+        }
+        .container-right{
+            height: 100%;
+            width: 40%;
+            background-color: rgb(76, 129, 235);
+        }
+        .content-page{
+            height: 60%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+        }
+        .button{
+            height: 6vh;
+            width: 3vw;
+            border-radius: 20px;
+            background-color: yellow;
+            position: fixed;
+            bottom: 0;
+            margin-bottom: 10px;
+        }
+        .content-box{
+            display: flex;
+            width: 80%;
+            height: 80%;
+            border: 2px solid white;
+            border-radius: 40px;
+            margin: auto;
+        }
+        .content-box h2{
+            text-align: center;
+            color: white;
+            margin: auto;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="container1">
+                <div class="container-left"></div>
+                <div class="container-right"></div>
+            </div>
+            <div class="content-page">
+                <div class="content-box">
+                    <h2>Welcome to this Sigma Web Development Express</h2>
+                </div>
+                <div class="button"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
